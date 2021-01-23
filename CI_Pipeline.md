@@ -5,9 +5,13 @@ Prerequisite
 
 An NFS server with exports for mnt/opt
 
+![](optexport.jpg)
+
+
+
 Network Information
 
-- Jenkins  192.168.1.109
+- Jenkins  192.168.1.147
 
 - NFS    192.168.1.143
 
@@ -16,18 +20,27 @@ Network Information
 
 I will be building a Jenkins CI pipeline for a tooling website.
 
+- I created a Jenkins server on Ubuntu 20.04
+
+-Perform chmod on the /var/lib directory on the Jenkins server
+
+```sudo chmod 777 /var/lib```
 
 
+I Mounted /var/lib/ to store data on NFS server
+```sudo mount 192.168.1.143:/mnt/opt /var/lib```
 
-I Mounted /var/lib/ to store data on NFS
-```sudo mount 192.168.1.143:/mnt/logs /var/log/apache2```
+I checked the mount
+
+`df -h`
+![](check.jpg)
 
 - After mounting to make sure the mount persists, i added the follwing to the /etc/fstab configuration
 
-```192.168.1.116:/mnt/opt  /var/lib	 nfs  defaults   0 0```
+```192.168.1.143:/mnt/opt  /var/lib	 nfs  defaults   0 0```
 
-
+- I edited the host file on the Jenkins server
 
 - Set up the Jenkins server
 
-I created a Jenkins server on Ubuntu 20.04
+I  installed jenkins on the Jenkins Server
