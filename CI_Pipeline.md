@@ -11,7 +11,7 @@ An NFS server with exports for mnt/opt
 
 Network Information
 
-- Jenkins  192.168.1.147
+- Jenkins  192.168.1.151
 
 - NFS    192.168.1.143
 
@@ -30,7 +30,7 @@ I will be building a Jenkins CI pipeline for a tooling website.
 I Mounted /var/lib/ to store data on NFS server
 ```sudo mount 192.168.1.143:/mnt/opt /var/lib```
 
-I checked the mount
+I checked the mount if persitent
 
 `df -h`
 ![](check.jpg)
