@@ -37,7 +37,7 @@ I checked the mount if persitent
 
 - After mounting to make sure the mount persists, i added the follwing to the /etc/fstab configuration
 
-```192.168.1.143:/mnt/opt  /var/lib	 nfs  defaults   0 0```
+```172.31.18.217:/mnt/opt  /var/lib	 nfs  defaults   0 0```
 
 - I edited the host file on the Jenkins server
 
