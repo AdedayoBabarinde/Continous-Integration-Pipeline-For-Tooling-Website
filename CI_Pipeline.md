@@ -44,3 +44,7 @@ I checked the mount if persitent
 - Set up the Jenkins server
 
 I  installed jenkins on the Jenkins Server
+
+I added the repository key to the system as follows:
+
+```wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -```
