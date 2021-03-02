@@ -11,9 +11,9 @@ An NFS server with exports for mnt/opt
 
 Network Information
 
-- Jenkins  192.168.1.151
+- Jenkins  172.31.38.93
 
-- NFS    192.168.1.143
+- NFS    172.31.47.218
 
 - Web Server 1  192.168.1.223 
 
