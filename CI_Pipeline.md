@@ -3,7 +3,7 @@
 
 Network Information
 
-- Jenkins  172.31.17.187(Ubuntu 20.04 on AWS)
+- Jenkins  18.133.196.130(Ubuntu 20.04 on AWS)
 
 - NFS    172.31.47.218(Red Hat AMI)
 
