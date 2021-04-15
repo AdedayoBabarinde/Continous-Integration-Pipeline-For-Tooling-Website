@@ -2,7 +2,7 @@
 
 
 
-To guaranty Agility(quick software release and web solutions) in DevOps, Automation is required. In this project we use Continous Integration to enable fast release of software and agility. In this project, we are required to implement CI for Tooling Website using Jenkins.
+To guaranty Agility(quick software release and web solutions) in DevOps, Automation is required. In this project we use Continous Integration to enable fast release of software and agility. In this project, we are required to implement Continous Integration for Tooling Website using Jenkins.
 
 [Project Notes]()
 
