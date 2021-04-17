@@ -3,58 +3,39 @@
 
 Network Information
 
-- Jenkins  18.133.196.130(Ubuntu 20.04 on AWS)
+- Jenkins  172.31.32.87(Ubuntu 20.04 on AWS)
 
-- NFS    35.179.91.232(Red Hat AMI)
+- NFS    172.31.36.217(Red Hat AMI)
 
-- Web Server 1  192.168.1.223 
+- Web Server 1  172.31.36.79(Red Hat AMI)
 
-
-Prerequisite
-
-An existing NFS server with exports for `mnt/opt`
-
-On the Jenkins server i checked the shared NFS folders as shown below
-![](optexport.jpg)
-
-
-I will be building a Jenkins CI pipeline for a tooling website.
-
--I backed up the `/var/lib` directory on the Jenkins server as follows:
-
-`sudo mkdir -p /home/recovery/libs`
-`sudo rsync -avz --no-o --no-g --no-perms /var/lib /home/recovery/libs`
-
-
-- I Mounted /var/lib/ to store data on NFS server
-```sudo mount 172.31.47.218:/mnt/opt /var/lib```
-
-I checked the mount if persitent
-
-`df -h`
-![](check.jpg)
-
-- After mounting to make sure the mount persists, i added the follwing to the /etc/fstab configuration
-
-`172.31.47.218:/mnt/opt  /var/lib	 nfs  defaults   0 0`
-
-- I copied back the content of /var/lib because mounting on it must have wiped the content
- `sudo rsync -avz --no-o --no-g --no-perms /home/recovery/libs/lib/ /var/lib`
+- Web Server 2 172.31.41.116(Red Hat AMI)
 
 
 
-- I edited the host file on the Jenkins server
 
-- Set up the Jenkins server
+**Install Jenkins server**
 
-I  installed jenkins on the Jenkins Server
 
-I added the repository key to the system as follows:
+```sudo apt update```
+
+```sudo apt install default-jdk-headless```
+
+
+
 
 ```wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -```
 
-`sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key`
+```sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > \ /etc/apt/sources.list.d/jenkins.list'```
 
-`sudo yum upgrade`
 
-`sudo yum install jenkins java-devel`
+From my browser i opened http://18.133.196.30:8080
+and inputed the password
+
+![](https://github.com/drazen-dee28/Continous-Integration-Pipeline-For-Tooling-Website/blob/main/img/unlockjenk.png)
+
+
+
+```sudo apt update```
+
+```sudo apt-get install jenkins```
