@@ -39,3 +39,16 @@ and inputed the password
 ```sudo apt update```
 
 ```sudo apt-get install jenkins```
+
+**Configure Jenkins to retrieve source codes from GitHub using Webhooks**
+
+I enabled webhooks in my GitHub repository settings
+
+![](https://github.com/drazen-dee28/Continous-Integration-Pipeline-For-Tooling-Website/blob/main/img/webhook.jpg)
+
+
+
+
+
+
+CREDITS
