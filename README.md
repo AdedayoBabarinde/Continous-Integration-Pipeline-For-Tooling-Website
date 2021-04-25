@@ -7,7 +7,7 @@ To guaranty Agility(quick software release and web solutions) in DevOps, Automat
 
 In this project we are going to utilize Jenkins Continous Integration capabilities to make sure that every change made to the source code in GitHub https://github.com/drazen-dee28/tooling.git will be automatically be updated to the Tooling Website.
 
-[Project Notes]()
+[Project Notes](https://github.com/drazen-dee28/Continous-Integration-Pipeline-For-Tooling-Website/blob/main/CI_Pipeline.md)
 
 
-![](ciarch.jpg)
+![](https://github.com/drazen-dee28/Continous-Integration-Pipeline-For-Tooling-Website/blob/main/img/ciarch.jpg)
