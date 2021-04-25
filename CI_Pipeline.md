@@ -44,11 +44,10 @@ and inputed the password
 
 I enabled webhooks in my GitHub repository settings
 
-![](https://github.com/drazen-dee28/Continous-Integration-Pipeline-For-Tooling-Website/blob/main/img/webhook.jpg)
+![](https://github.com/drazen-dee28/Continous-Integration-Pipeline-For-Tooling-Website/blob/main/img/webhook
 
 
 
+I created and configured a freestyle project, then connected my github repository to it
 
-
-
-CREDITS
+![](https://github.com/drazen-dee28/Continous-Integration-Pipeline-For-Tooling-Website/blob/main/img/cre.png)
