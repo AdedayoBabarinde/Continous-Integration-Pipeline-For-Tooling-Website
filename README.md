@@ -11,3 +11,8 @@ In this project we are going to utilize Jenkins Continous Integration capabiliti
 
 
 ![](https://github.com/drazen-dee28/Continous-Integration-Pipeline-For-Tooling-Website/blob/main/img/ciarch.jpg)
+
+
+
+
+
