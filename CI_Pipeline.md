@@ -51,3 +51,15 @@ I enabled webhooks in my GitHub repository settings
 I created and configured a freestyle project, then connected my github repository to it
 
 ![](https://github.com/drazen-dee28/Continous-Integration-Pipeline-For-Tooling-Website/blob/main/img/cre.jpg)
+
+
+
+
+**Configure Jenkins to copy files to NFS server via SSH**
+
+
+
+
+CREDITS
+
+[DevOps with Darey](www.darey.io)
